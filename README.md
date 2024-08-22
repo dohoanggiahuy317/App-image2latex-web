@@ -2,6 +2,9 @@
 Recognizing the challenges faced by my friends when learning LaTeX and typing LaTeX equations for homework, I developed a web app that employs a Transformers machine learning model to simplify the conversion of images into LaTeX equations for school assignments.
 
 ## Usage
+
+### Step 1
+
 As a hosting server for the application is not available, you will need to clone this project to run the application.
 
 ```
@@ -10,11 +13,32 @@ git clone https://github.com/dohoanggiahuy317/App-image2latex-web.git
 
 Next, open the command prompt or terminal and navigate to the project folder.
 
-You can create a new Python virtual environment if desired. Then, download the required packages for the application using:
+### Step 2
 
+OPTION 1: If you choose to download the provided virtual environment [here](https://drive.google.com/drive/folders/14d0XrAmrnC_ruaK02Q0ZzScz7QBgKYu1?usp=drive_link), activate it using conda or python, I'm using conda here:
+
+```bash
+conda deactivate
+conda activate ./.env
 ```
-pip3 install -r requirements.txt
+
+OPTION 2: Set up a new virtual environment (you can use conda) with python 3.10, activate it, then install the required packages:
+
+You can use the following command to create a virtual environment using conda
+
+```bash
+conda create --prefix .env python=3.10
+conda deactivate
+conda activate ./.env
 ```
+
+Then, pip install packages
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 3
 
 Finally, from the root directory of the application, execute the following command to run the application:
 

@@ -2,6 +2,10 @@
 /qdrant
 .ruff_cache/
 
+*.png
+*.jpg
+$.jpeg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
